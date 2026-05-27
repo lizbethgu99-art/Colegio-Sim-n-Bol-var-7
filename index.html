@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colegio Fiscal Simón Bolívar</title>
+
+<style>
+body{
+font-family:Arial;
+margin:0;
+background:linear-gradient(#eaf2ff,#ffffff);
+scroll-behavior:smooth;
+}
+
+*{box-sizing:border-box;} 
+
+header{
+background:#002b5c;
+color:white;
+text-align:center;
+padding: 25px;
+}
+
+header img{
+width: 90px;
+}
+
+nav{
+background:#004a99;
+text-align:center;
+padding: 10px;
+position:sticky;
+top:0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+z-index: 1000;
+}
+
+nav a{
+color:white;
+margin: 5px;
+text-decoration:none;
+font-weight:bold;
+font-size: 14px;
+padding: 5px 10px;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+section{
+padding:20px;
+}
+
+h2{
+color:#002b5c;
+}
+
+.slider{
+width:100%;
+overflow:hidden;
+background: #eee;
+max-width:1200px;
+margin:0 auto;
+}
+
+.slides{
+    display:flex;
+    width:500%; /* 5 imágenes */
+    animation:cambio 25s linear infinite;
+}
+
+.slides img{
+    flex: 0 0 20%; /* cada imagen ocupa 20% del contenedor .slides (que mide 500%) => 100% del slider */
+    width:20%;
+height:450px;
+object-fit: cover;
+object-position: center;
+display: block;
+}
+
+@keyframes cambio{
+    0%{margin-left:0;}
+    16%{margin-left:0;}
+    20%{margin-left:-100%;}
+    36%{margin-left:-100%;}
+    40%{margin-left:-200%;}
+    56%{margin-left:-200%;}
+    60%{margin-left:-300%;}
+    76%{margin-left:-300%;}
+    80%{margin-left:-400%;}
+    96%{margin-left:-400%;}
+    100%{margin-left:0;}
+}
+
+.caja{
+background:white;
+margin: 20px auto;
+max-width: 900px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 12px rgba(0,0,0,0.1);
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.caja.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+/* --- AJUSTES PARA CELULARES  --- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .slides {
+    display: flex;
+    width: 500%; /* 5 imágenes */
+}
+    .slides img {
+        flex: 0 0 20%; /* mantener 5 imágenes en el carrusel */
+        height: 200px; /* Altura más pequeña para el celular */
+        width: 20%;
+        min-height: 120px;
+        object-fit: cover;
+        display: block;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+}
+
+#arriba{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#004a99;
+color:white;
+border:none;
+padding:12px 16px;
+border-radius:50%;
+font-size:18px;
+cursor:pointer;
+z-index: 2000;
+}
+
+footer{
+background:#002b5c;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* Responsividad general para imágenes y audios */
+img{max-width:100%;height:auto;display:block}
+audio{width:100%;max-width:900px;display:block;margin:8px 0}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.jpeg">
+<h1>Colegio Fiscal Simón Bolívar</h1>
+</header>
+
+<nav>
+<a href="#historia">Historia</a>
+<a href="#mision">Misión</a>
+<a href="#himno">Himno</a>
+<a href="#especialidades">Especialidades</a>
+<a href="#grupos">Grupos</a>
+<a href="#barras">Barras</a>
+<a href="#contactos">Contactos</a>
+<a href="#anexos">Anexos</a>
+</nav>
+
+<div class="slider">
+<div class="slides">
+<img src="logo.jpeg">
+<img src="Grupo_de_banda_1.jpeg">
+<img src="Grupo_de_danza_1.jpeg">
+<img src="GRUPO_DE_VOLEY_4.jpeg">
+<img src="informatica_1.jpeg">
+</div>
+</div>
+
+<section>
+
+<div class="caja" id="historia">
+
+<h2>Historia</h2>
+
+<p>
+Historia del colegio Simón Bolívar
+</p>
+
+<p>
+Fue fundado el 19 de agosto de 1940, bajo el nombre de Liceo Simón Bolívar mediante el Acuerdo Ministerial N° 571, por parte de la educadora María Angélica Idrobo; con el objetivo de formar en educación secundaria a la juventud femenina, en varias especialidades y se estableció como un plantel particular.
+</p>
+
+<p>
+Fue nombrado en honor a Simón Bolívar, militar y prócer de la independencia americana. Inicialmente se ubicó en el hogar de su fundadora y posteriormente se reubicó a la instalación ubicada en las calles Benalcázar y Olmedo, Centro histórico de Quito.
+</p>
+
+<p>
+En 1948 el Liceo Simón Bolívar pasa a pertenecer al Ministerio de Educación, de esta forma se convierte en una institución pública. Entre las especialidades disponibles se encontraban: corte y confección, bordado y contabilidad.
+</p>
+
+<p>
+El 21 de septiembre de 1957 se reorganiza, cambiando su nombre a ''Colegio Técnico de Señoritas Simón Bolívar''. En esta época, el rectorado de la institución fue asumido por Helena Cortés de Gutiérrez, quien se mantuvo en el cargo por 31 años.
+</p>
+
+<p>
+En 1960, se afianza como uno de los planteles pioneros en la doble jornada de trabajo al crear la sección vespertina.
+</p>
+
+<p>
+El 7 de agosto de 1984, mediante Acuerdo Ministerial N° 5719, pasa a convertirse en plantel experimental.
+</p>
+
+<p>
+En el año 2011, el colegio pasa a ser mixto, conforme a la reforma del Ministerio de Educación; por lo tanto, se integraron estudiantes de género masculino.
+</p>
+
+<h3>Infraestructura</h3>
+
+<h3>1940 - 2012: El edificio del centro histórico</h3>
+
+<p>
+Históricamente, el Simón Bolívar se ubicó en el edificio patrimonial ubicado en las calles Benalcázar y Olmedo, en el Centro Histórico de Quito.
+</p>
+
+<p>
+Esta infraestructura tiene más de 300 años, anteriormente fueron las instalaciones del Instituto Nacional Mejía; cuenta con cinco edificios patrimoniales tipo patio y un edificio tipo basílica, además de estos también cuenta con otros edificios incorporados por el plantel.
+</p>
+
+<p>
+Allí funcionó este establecimiento educativo por un período de 72 años.
+</p>
+
+<p>
+En el año 2010, se encontraron daños en la infraestructura del edificio por su antigüedad, lo que posteriormente generó que la institución cambiara de edificio.
+</p>
+
+<h3>2012 - actual: Cambio de Edificio</h3>
+
+<p>
+En el año 2012, después de concretarse el convenio entre el Municipio de Quito, Ministerio de Educación y el Instituto Metropolitano de Patrimonio, el Colegio Simón Bolívar se mudó a sus nuevas instalaciones, ubicadas en las calles Río de Janeiro y Manuel Larrea.
+</p>
+
+<p>
+En dicho edificio funcionó anteriormente el Colegio Municipal Eugenio Espejo, las cuales fueron intervenidas en su infraestructura para poder recibir a los estudiantes del Simón Bolívar. Esto se dio a partir del año lectivo 2012-2013.
+</p>
+
+<p>
+Sus instalaciones actuales se componen de lo siguiente:
+</p>
+
+<ul>
+<li>27 salas administrativas</li>
+<li>40 aulas de clases</li>
+<li>10 laboratorios de ciencias e informática</li>
+<li>baterías sanitarias (hombres – mujeres)</li>
+<li>piscina</li>
+<li>teatro (340 personas)</li>
+<li>cinco patios y terrazas accesibles</li>
+</ul>
+
+<p>
+Mide en total 9300 m², de los cuales el bloque antiguo tiene 5 800 m² y el bloque más reciente (construido durante la intervención), 3 500 m².
+</p>
+
+<p>
+En la parte exterior, en la calle Río de Janeiro cuenta con parqueaderos.
+</p>
+
+</div>
+
+<div class="caja" id="mision">
+<h2>Misión</h2>
+<p>Formar estudiantes con una educación integral basada en valores,
+conocimientos científicos y tecnológicos que les permitan desenvolverse
+con responsabilidad dentro de la sociedad.</p>
+
+<h2>Visión</h2>
+<p>Ser una institución educativa reconocida por su calidad académica,
+formación en valores y compromiso con el desarrollo integral
+de los estudiantes.</p>
+
+<h2>Valores</h2>
+<ul>
+<li>Respeto</li>
+<li>Responsabilidad</li>
+<li>Honestidad</li>
+<li>Solidaridad</li>
+<li>Disciplina</li>
+</ul>
+</div>
+
+<div class="caja" id="himno">
+<h2>Himno del Colegio</h2>
+<p>Todo el orbe se pone de pie para honrar de Bolívar el nombre que en la tierra no hay quien no se asombre de su espada mirando el fulgor.</p>
+<p>Ante el bronce su efigie sagrada entonemos un himno de gloria, que en el mundo repita la Historia de su invicto y heroico campeón.</p>
+<p>Si en Caracas su cuerpo reposa en un templo mamóreo y grandioso otro templo muy alto y hermoso, le consagra también mi nación.</p>
+<p>De laureles con áureas coronas demos culto a su altar sin ejemplo, como el mármol que cubre su templo siempre eterno será nuestro amor.</p>
+<p>Letra: Presbítero Enrique Nájera<br>Música: Reinaldo Suárez</p>
+</div>
+
+<div class="caja" id="especialidades">
+<h2>Especialidades de Bachillerato</h2>
+<h3>Informática</h3>
+<p>La especialidad de informática prepara a los estudiantes en el uso de tecnologías, programación y desarrollo de software.</p>
+<h3>Contabilidad</h3>
+<p>La especialidad de contabilidad forma estudiantes capaces de manejar registros financieros y administración de recursos económicos.</p>
+<h3>Bachillerato General Unificado</h3>
+<p>Brinda formación académica general en matemáticas, lengua, ciencias naturales, estudios sociales e inglés.</p>
+</div>
+
+<div class="caja" id="grupos">
+<h2>Grupos del Colegio</h2>
+<p>El Colegio Fiscal Simón Bolívar cuenta con diferentes grupos deportivos, artísticos y culturales en los que los estudiantes pueden participar según sus intereses y talentos. Estos grupos permiten desarrollar habilidades físicas, artísticas y sociales, además de fomentar la disciplina, el compañerismo y el orgullo de representar al colegio en eventos y competencias.</p>
+
+<h3>Selección de fútbol femenino y masculino</h3>
+<p>La selección de fútbol del colegio está conformada por estudiantes que tienen habilidades en este deporte y que representan a la institución en campeonatos intercolegiales y actividades deportivas. Durante los entrenamientos los estudiantes aprenden técnicas de juego, estrategia, disciplina y trabajo en equipo.</p>
+<p>La motivación de los estudiantes para formar parte de este grupo es desarrollar sus capacidades deportivas, mejorar su condición física y tener la oportunidad de representar con orgullo al colegio en diferentes competencias.</p>
+
+<h3>Selección de básquet masculino</h3>
+<p>El equipo de básquet masculino participa en torneos deportivos y eventos institucionales. Este grupo permite a los estudiantes desarrollar habilidades como la coordinación, velocidad, estrategia y trabajo en equipo.</p>
+<p>Los estudiantes se sienten motivados a participar porque el básquet les permite fortalecer su disciplina deportiva, compartir con sus compañeros y vivir la experiencia de competir representando al colegio.</p>
+
+<h3>Selección de ecuavóley femenino y masculino</h3>
+<p>El ecuavóley es un deporte tradicional muy popular en el Ecuador. En el colegio este grupo promueve la práctica de este deporte, organizando entrenamientos y participando en torneos deportivos.</p>
+<p>Los estudiantes se motivan a participar porque disfrutan del deporte, fortalecen el trabajo en equipo y mantienen viva una tradición deportiva ecuatoriana.</p>
+
+<h3>Bastoneras</h3>
+<p>El grupo de bastoneras está conformado por estudiantes que participan en desfiles, actos cívicos y eventos institucionales del colegio. Este grupo requiere disciplina, coordinación, elegancia y práctica constante para realizar coreografías y presentaciones.</p>
+<p>La motivación de las estudiantes para integrarse a este grupo es representar al colegio en eventos importantes, demostrar sus habilidades artísticas y fortalecer la confianza y el trabajo en equipo.</p>
+
+<h3>Banda del colegio</h3>
+<p>La banda del colegio está formada por estudiantes que interpretan instrumentos musicales y acompañan actos cívicos, desfiles y ceremonias institucionales. La banda representa una tradición importante dentro de la institución.</p>
+<p>Los estudiantes participan en este grupo porque desean desarrollar sus talentos musicales, aprender disciplina y contribuir con el ambiente cultural y artístico del colegio.</p>
+
+<h3>Grupo de danza</h3>
+<p>El grupo de danza promueve la expresión artística a través del baile. Los estudiantes realizan presentaciones en eventos culturales, festividades escolares y actividades institucionales.</p>
+<p>La motivación para participar en danza es poder expresar creatividad, aprender sobre cultura y arte, y compartir momentos de alegría y compañerismo con otros estudiantes.</p>
+</div>
+
+<div class="caja" id="barras">
+<h2>Barras del Colegio</h2>
+<p>¡POR EL COLEGIO!<br>
+Simón Bolívar, gritamos tu nombre que perdure en el tiempo y en el corazón de quienes te queremos, azul y blanco los colores que defienden con honor el futuro de la patria.</p>
+<p>¡Somos del Colegio Simón Bolívar, sí señor!<br>
+¡C - O! Co<br>¡L - E! Le<br>¡GIO! GIO<br>¡Colegio Simón Bolívar, sí señor!</p>
+<p>Que dice la C Colegio<br>Que dice la S Simón<br>Que dice la B Bolívar<br>Csb Colegio Simón Bolívar ras</p>
+</div>
+
+<div class="caja" id="contactos">
+<h2>Contactos y Dirección</h2>
+<p>Dirección: Calle Río de Janeiro y Manuel Larrea, Quito, Ecuador</p>
+<p>Teléfono: +593 2 123 4567</p>
+<p>Email: info@colegiosimonbolivar.edu.ec</p>
+</div>
+
+<div class="caja" id="anexos">
+<h2>Entrevista a licenciadas</h2>
+<audio controls src="audios/Silvia-Echeverría.ogg"></audio>
+<audio controls src="audios/Jenny-live.ogg"></audio>
+<audio controls src="audios/Bastoneras.ogg"></audio>
+</div>
+
+</section>
+
+<button id="arriba" onclick="window.scrollTo(0,0)">↑</button>
+
+<footer>
+<p>© Colegio Fiscal Simón Bolívar</p>
+</footer>
+
+<script>
+const cajas=document.querySelectorAll(".caja");
+window.addEventListener("scroll",()=>{
+cajas.forEach(caja=>{
+const top=caja.getBoundingClientRect().top;
+if(top<window.innerHeight-50){
+caja.classList.add("visible");
+}
+});
+});
+/* MODO OSCURO */
+
+const boton=document.getElementById("modo");
+if(boton){
+    boton.addEventListener('click', ()=>{
+        document.body.classList.toggle('dark');
+    });
+}
+</script>
+
+</body>
+</html>
